@@ -1,10 +1,10 @@
 :root {
-  --primary: #9ca3af;   /* abu netral */
-  --secondary: #6b7280; /* abu medium */
-  --bg: #111827;        /* abu gelap background */
-  --card: #1f2937;      /* abu tua untuk card */
-  --text: #f3f4f6;      /* putih keabu buat teks */
-  --muted: #9ca3af;     /* abu soft */
+  --primary: #9ca3af;   
+  --secondary: #6b7280; 
+  --bg: #111827;       
+  --card: #1f2937;     
+  --text: #f3f4f6;    
+  --muted: #9ca3af;    
 }
 
 * {
@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #111827, #1f2937); /* gradasi abu gelap */
+  background: linear-gradient(135deg, #111827, #1f2937);
   color: var(--text);
   line-height: 1.6;
 }
@@ -24,15 +24,34 @@ nav {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   z-index: 1000;
 }
-nav a {
+
+nav .logo {
+  font-weight: bold;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+nav .menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+nav .nav-links a {
   text-decoration: none;
   color: var(--muted);
   font-weight: 500;
@@ -40,9 +59,38 @@ nav a {
   padding: 6px 12px;
   border-radius: 6px;
 }
-nav a:hover {
+
+nav .nav-links a:hover {
   color: white;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+@media (max-width: 768px) {
+  nav .menu-toggle {
+    display: block;
+  }
+
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  nav .nav-links.active {
+    display: flex;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 header {
@@ -51,7 +99,7 @@ header {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
 }
-header .home {
+header .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,19 +142,21 @@ h2 {
   padding-left: 10px;
 }
 
-ul {
-  margin-left: 20px;
-}
+ul { margin-left: 20px; }
 
+.table-wrapper {
+  overflow-x: auto;
+}
 table {
-  width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  min-width: 600px;
 }
 th, td {
   padding: 10px;
   border: 1px solid rgba(255,255,255,0.1);
   text-align: center;
+  white-space: nowrap;
 }
 th {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -131,7 +181,6 @@ th {
   color: var(--text);
   transition: all 0.3s;
 }
-
 .socials a:hover {
   color: var(--primary);
   transform: scale(1.2);
