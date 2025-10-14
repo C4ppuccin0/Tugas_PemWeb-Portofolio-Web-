@@ -1,173 +1,226 @@
 <!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Argha Portofolio</title>
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
-        <nav>
-            <div class="logo">Argha</div>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArghaPortofolio</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav>
+        <div class="logo">Argha</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobby">Hobby</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Catatan Belajar</a>
+                <div class="dropdown-content">
+                    <a href="#materi-web">Mengenal Web Tech</a>
+                    <a href="#tata-cara">Cara Buat Website</a>
+                    <a href="#kesan-pesan">Kesan & Pesan</a>
+                </div>
             </div>
-            <div class="nav-links" id="nav-links">
-                <a href="#top">Home</a>
-                <a href="#profil">About Me</a>
-                <a href="#hobi">Hobby</a>
-                <a href="#skills">Skills</a>
-                <a href="#jadwal">Schedulle</a>
-                <a href="#kontak">Contact</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header id="hero" class="hero">
+        <img src="img/profilimage.jpg" alt="Foto Profil Argha" class="profile-pic" data-aos="fade-down">
+        <h1 data-aos="fade-down" data-aos-delay="100">Argha Niqie Wijaksono</h1>
+        <p class="subtitle" data-aos="fade-down" data-aos-delay="200">Mahasiswa Ilmu Komputer USU | Ferrari F1 & Man Utd Fan</p>
+        <p class="quote" data-aos="fade-up" data-aos-delay="300">"All Is Well" - Three Idiots (2009)</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2 data-aos="fade-down">About Me</h2>
+            <div class="about-content" data-aos="fade-up">
+                <p>
+                    Halo! Saya Argha Niqie Wijaksono, seorang mahasiswa Ilmu Komputer di Universitas Sumatera Utara (USU) yang antusias dengan dunia teknologi dan pengembangan web. Saya senang mengubah ide-ide kompleks menjadi website yang fungsional dan menarik secara visual. Saat ini, saya fokus memperdalam keahlian dalam HTML, CSS, dan JavaScript, sambil terus mengeksplorasi teknologi baru untuk memecahkan masalah secara kreatif.
+                </p>
+                <p>
+                    Di luar coding, saya adalah penggemar berat Formula 1 (Tifosi) dan Manchester United. Bagi saya, mendukung tim favorit mengajarkan arti loyalitas dan optimisme, dua nilai yang juga saya bawa ke dalam setiap proyek yang saya kerjakan.
+                </p>
             </div>
-        </nav>
-        <header id="top">
-            <div class="profile">
-                <img src="img/profilimage.jpg" alt="Foto Profil">
-                <h1>Argha Niqie Wijaksono</h1>
-                <p>"All Is Well" -Three Idiots (2009)</p>
-            </div>
-        </header>
-        <section id="profil">
-            <h2>About Me</h2>
-            <p>
-            Halo, perkenalkan saya Argha Niqie Wijaksono. Saya adalah Mahasiswa S1-Ilmu Komputer USU,
-            dengan NIM 241401096 dan saya berada di KOM C.
-            </p>
-            <p>
-            Fun Fact tentang saya adalah saya itu setia karena saya seorang Tifosi F1 dan
-            Red Devils. Ya, saya mendukung tim yang sekarang lagi bapuk tapi dulunya mereka adalah penguasa dibidangnya,
-            maka oleh karena itu saya ingin melihat mereka kembali berjaya walaupun ntah kapan.
-            </p>
-        </section>
-        <section id="hobi">
-            <h2>Hobby</h2>
-            <ul>
-                <li>Baca Buku atau Komik</li>
-                <li>Nonton Film/Anime</li>
-                <li>Gaming</li>
-                <li>E-Sport Enthusiast</li>
-                <li>Berenang</li>
-                <li>Futsal</li>
-                <li>Volly</li>
-                <li>Tidur</li>
-                <li>Makan</li>
-                <li>Nonton Bola & F1</li>
-                <li>DLL</li>
-            </ul>
         </section>
         <section id="skills">
-            <h2>Skills & Pendidikan</h2>
-            <p><strong>Skills:</strong></p>
-            <ul>
-                <li>Pascal, C++, C, Python, HTML, CSS</li>
-                <li>Ex DM1 di Valorant</li>
-                <li>Ex DM3 di Apex Legend</li>
-                <li>Ex Ace Dominator 14 di PUBGM</li>
-            </ul>
-            <p><strong>Pendidikan:</strong></p>
-            <ul>
-                <li>SMP IT Al-Munadi Medan</li>
-                <li>SMK Negeri 14 Medan</li>
-                <li>Universitas Sumatera Utara</li>
-            </ul>
+            <h2 data-aos="fade-down">Skills & Education</h2>
+            <div class="card-container">
+                <div class="card" data-aos="fade-up">
+                    <div class="card-header"><i class="fas fa-code"></i><h3>Programming</h3></div>
+                    <p>Pascal, C++, C, Python, HTML, CSS, JS</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header"><i class="fas fa-gamepad"></i><h3>Gaming Achievement</h3></div>
+                    <ul>
+                        <li>Ex Diamond 1 di Valorant</li>
+                        <li>Ex Diamond 3 di Apex Legends</li>
+                        <li>Ex Ace Dominator 14 di PUBGM</li>
+                    </ul>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header"><i class="fas fa-graduation-cap"></i><h3>Education</h3></div>
+                    <ul>
+                        <li>Universitas Sumatera Utara</li>
+                        <li>SMK Negeri 14 Medan</li>
+                        <li>SMP IT Al-Munadi Medan</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section id="jadwal">
-            <h2>Jadwal Kuliah</h2>
-            <div class="table-wrapper">
+        <section id="hobby">
+            <h2 data-aos="fade-down">Hobby</h2>
+            <div class="card-container-hobby">
+                <div class="hobby-item" data-aos="zoom-in"><i class="fas fa-book-open"></i><span>Baca Buku/Komik</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="50"><i class="fas fa-film"></i><span>Nonton Film/Anime</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-headset"></i><span>Gaming</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="150"><i class="fas fa-trophy"></i><span>E-Sport Enthusiast</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-swimmer"></i><span>Berenang</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="250"><i class="fas fa-futbol"></i><span>Futsal & Sepak Bola</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-flag-checkered"></i><span>Nonton F1</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="350"><i class="fas fa-bed"></i><span>Tidur</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-camera"></i><span>Fotografi</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="450"><i class="fas fa-wand-magic-sparkles"></i><span>Editing</span></div>
+                <div class="hobby-item" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-utensils"></i><span>Cooking</span></div>
+            </div>
+        </section>
+        <section id="materi-web">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Mengenal Fondasi Web</h2>
+            <p class="section-subtitle">HTML, CSS, JavaScript & Tailwind.</p>
+        </div>
+        <div class="tech-card-container">
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fab fa-html5 icon-html"></i>
+                <h3>HTML</h3>
+                <p>Kerangka atau struktur dasar dari sebuah halaman web. Ibaratnya, ini adalah tulang-belulang website.</p>
+            </div>
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-css3-alt icon-css"></i>
+                <h3>CSS</h3>
+                <p>Digunakan untuk mendesain tampilan website, seperti warna, layout, dan font. Ini adalah "kulit" dan "pakaian" dari website.</p>
+            </div>
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-js-square icon-js"></i>
+                <h3>JavaScript</h3>
+                <p>Bahasa yang membuat website menjadi interaktif dan dinamis. Ini adalah "otak" dan "otot" website.</p>
+            </div>
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+                <svg class="icon-tailwind" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.334,6.182,14.973,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.334,13.382,8.973,12,6.001,12z"></path>
+                </svg>
+                <h3>Tailwind CSS</h3>
+                <p>Framework CSS yang mempercepat proses styling dengan menyediakan class-class siap pakai (utility-first).</p>
+            </div>
+        </div>
+        </section>
+        <section id="tata-cara">
+            <h2 data-aos="fade-down">Langkah Membuat Website</h2>
+            <div class="steps-container" data-aos="fade-up">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Persiapan</h3>
+                        <p>Siapkan Text Editor (seperti VS Code) dan Web Browser.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Struktur (HTML)</h3>
+                        <p>Buat file <strong>index.html</strong> dan susun kerangka konten dengan tag.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Gaya (CSS)</h3>
+                        <p>Buat file <strong>style.css</strong> untuk mendesain warna, font, dan layout.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Interaksi (JS)</h3>
+                        <p>Buat file <strong>script.js</strong> untuk menambahkan animasi dan fungsi interaktif.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Publikasi</h3>
+                        <p>Unggah folder proyek ke layanan gratis seperti Vercel atau GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="kesan-pesan">
+        <h2 data-aos="fade-down">Kesan & Pesan</h2>
+        <div class="card-like-content" data-aos="fade-up">
+            <h3>Kesan ✨</h3>
+            <p>
+                Memasuki dunia pemrograman web awalnya bisa terasa sulit dan penuh rintangan. Frustrasi akibat eror dan kebingungan melihat kode adalah hal yang biasa. Namun, semua kesulitan itu terbayar lunas dengan rasa puas yang tak ternilai ketika hasil kode kita tampil sempurna di browser atau sebuah fitur berjalan lancar. Pengalaman ini membentuk mentalitas untuk selalu sabar, teliti, dan terus belajar.
+            </p>
+            
+            <h3>Pesan 💡</h3>
+            <p>
+                Bagi para pemula, anggaplah setiap eror bukan sebagai kegagalan, melainkan sebagai petunjuk berharga yang membimbing Anda. Manfaatkan sumber daya seperti Google dan komunitas developer untuk menemukan solusi, dan jangan segan bertanya. Kunci kesuksesan terletak pada konsistensi, berlatih sedikit demi sedikit setiap hari jauh lebih efektif. Nikmatilah perjalanannya, sebab mengubah barisan kode menjadi website yang interaktif akan memberikan kepuasan yang luar biasa.
+            </p>
+        </div>
+    </section>
+        <section id="schedule">
+            <h2 data-aos="fade-down">My College Schedule</h2>
+            <div class="table-wrapper" data-aos="fade-up">
                 <table>
-                    <tr>
-                        <th>Hari</th>
-                        <th>Jam</th>
-                        <th>Mata Kuliah</th>
-                        <th>Ruang</th>
-                        <th>Dosen</th>
-                    </tr>
-                    <tr>
-                        <td>Senin</td>
-                        <td>10:30-12:10</td>
-                        <td>Musikologi Sumatera Utara</td>
-                        <td>M RSM 2</td>
-                        <td>Drs. Torang Naiborhu M.Hum.</td>
-                    </tr>
-                    <tr>
-                        <td>Selasa</td>
-                        <td>10:30-12:10</td>
-                        <td>IELTS Preparation</td>
-                        <td>D - 101</td>
-                        <td>Drs. Yulianus Harefa GradDipEd TESOL., MEd TESOL</td>
-                    </tr>
-                    <tr>
-                        <td>Selasa</td>
-                        <td>12:10-13:50</td>
-                        <td>Praktikum Struktur Data</td>
-                        <td>Lab 2</td>
-                        <td>Anandhini Medianty Nababan S.Kom., M.T</td>
-                    </tr>
-                    <tr>
-                        <td>Selasa</td>
-                        <td>13:50-15:30</td>
-                        <td>Praktikum Pemrograman Web</td>
-                        <td>Lab 3</td>
-                        <td>Nurrahmadayeni M.Kom</td>
-                    </tr>
-                    <tr>
-                        <td>Rabu</td>
-                        <td>08:00-10:30</td>
-                        <td>Struktur Data</td>
-                        <td>D - 104</td>
-                        <td>Anandhini Medianty Nababan S.Kom., M.T</td>
-                    </tr>
-                    <tr>
-                        <td>Rabu</td>
-                        <td>10:30-13:00</td>
-                        <td>Kecerdasan Buatan</td>
-                        <td>D - 105</td>
-                        <td>Dr. Pauzi Ibrahim Nainggolan S.Komp., M.Sc.</td>
-                    </tr>
-                    <tr>
-                        <td>Rabu</td>
-                        <td>14:40-17:10</td>
-                        <td>Pemrograman Web</td>
-                        <td>D - 102</td>
-                        <td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
-                    </tr>
-                    <tr>
-                        <td>Jum'at</td>
-                        <td>08:00-10:30</td>
-                        <td>Basis Data</td>
-                        <td>D - 101</td>
-                        <td>Insidini Fawwaz M.Kom</td>
-                    </tr>
-                    <tr>
-                        <td>Jum'at</td>
-                        <td>10:30-12:10</td>
-                        <td>Wirausaha Digital</td>
-                        <td>D - 105</td>
-                        <td>Dr. T. Henny Febriana Harumy S.Kom., M.Kom</td>
-                    </tr>
-                    <tr>
-                        <td>Jum'at</td>
-                        <td>14:40-16:20</td>
-                        <td>Praktikum Basis Data</td>
-                        <td>Lab 3</td>
-                        <td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Jam</th>
+                            <th>Mata Kuliah</th>
+                            <th>Ruang</th>
+                            <th>Dosen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Senin</td><td>10:30-12:10</td><td>Musikologi Sumatera Utara</td><td>M RSM 2</td><td>Drs. Torang Naiborhu M.Hum.</td></tr>
+                        <tr><td>Selasa</td><td>10:30-12:10</td><td>IELTS Preparation</td><td>D - 101</td><td>Drs. Yulianus Harefa GradDipEd TESOL., MEd TESOL</td></tr>
+                        <tr><td>Selasa</td><td>12:10-13:50</td><td>Praktikum Struktur Data</td><td>Lab 2</td><td>Anandhini Medianty Nababan S.Kom., M.T</td></tr>
+                        <tr><td>Selasa</td><td>13:50-15:30</td><td>Praktikum Pemrograman Web</td><td>Lab 3</td><td>Nurrahmadayeni M.Kom</td></tr>
+                        <tr><td>Rabu</td><td>08:00-10:30</td><td>Struktur Data</td><td>D - 104</td><td>Anandhini Medianty Nababan S.Kom., M.T</td></tr>
+                        <tr><td>Rabu</td><td>10:30-13:00</td><td>Kecerdasan Buatan</td><td>D - 105</td><td>Dr. Pauzi Ibrahim Nainggolan S.Komp., M.Sc.</td></tr>
+                        <tr><td>Rabu</td><td>14:40-17:10</td><td>Pemrograman Web</td><td>D - 102</td><td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td></tr>
+                        <tr><td>Jum'at</td><td>08:00-10:30</td><td>Basis Data</td><td>D - 101</td><td>Insidini Fawwaz M.Kom</td></tr>
+                        <tr><td>Jum'at</td><td>10:30-12:10</td><td>Wirausaha Digital</td><td>D - 105</td><td>Dr. T. Henny Febriana Harumy S.Kom., M.Kom</td></tr>
+                        <tr><td>Jum'at</td><td>14:40-16:20</td><td>Praktikum Basis Data</td><td>Lab 3</td><td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td></tr>
+                    </tbody>
                 </table>
             </div>
-        </section>
-        <section id="kontak">
-            <h2>Stay Connected</h2>
-            <div class="socials">
-                <a href="https://github.com/C4ppuccin0" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/argha_.n" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.com/users/575270144176160768" target="_blank"><i class="fab fa-discord"></i></a>
+        </section>      
+        <section id="contact">
+            <h2 data-aos="fade-up">Get In Touch</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Let's connect and build something amazing together.</p>
+            <div class="socials" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://github.com/C4ppuccin0" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/argha_.n" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/users/575270144176160768" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
             </div>
         </section>
-        <footer>
-            <p>&copy;2025 Made by Argha. </p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    </main>    
+    <footer>
+        <p>&copy; 2025 Argha Niqie Wijaksono. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
